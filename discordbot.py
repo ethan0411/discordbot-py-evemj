@@ -3,6 +3,12 @@ from distutils.sysconfig import PREFIX
 import discord
 from dotenv import load_dotenv
 import os
+import asyncio
+import requests
+from bs4 import BeautifulSoup
+from discord.ui import Button, View
+from discord.ext import commands
+from discord.utils import get
 load_dotenv()
 
 PREFIX = os.environ['PREFIX']
